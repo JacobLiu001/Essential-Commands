@@ -33,7 +33,9 @@ allprojects {
         : "${project.mod_version}-mc${project.minecraft_version}"
 
     version = full_version
-    archivesBaseName = "${project.mod_id}"
+    base {
+        archivesName = "${project.mod_id}"
+    }
 
     sourceCompatibility = targetCompatibility = JavaVersion.VERSION_21
 
